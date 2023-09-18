@@ -1,0 +1,382 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*background: url('gifforweb.gif');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation: slide 25s infinite;
+}
+
+/*@keyframes slide {
+    25%{
+        background: url('Images/lishen18.jpg');
+    }
+    50%{
+        background: url('Images/qiyu17.jpg');
+    }
+}*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: rgba(39, 39, 39, 0.226);*/
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    /*background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);*/
+    z-index: 100;
+}
+
+/*.nav-intro li {
+    display: flex;
+}
+
+.nav-intro li a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0rem 2rem;
+    list-style-type: none;
+    color: #fff;
+}
+
+.nav-intro ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 5rem;
+}
+
+.link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.sub-intro-1 {
+    display: none;
+}
+
+.nav-intro:hover .sub-intro-1 {
+    margin-left: -32px;
+    right: 100;
+    position: absolute;
+    padding: 2rem 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-intro ul li:hover .sub-intro-1 ul {
+    display: block;
+    margin: 10px;
+}*/
+
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: .3s ease;
+}
+
+#registerBtn {
+    margin-left: 15px;
+}
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);  
+}
+
+.btn.btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-intro-btn{
+    display: none;
+}
+
+.nav .nav-music-btn i {
+    color: #000000;
+    margin-left: 50rem;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(243, 243, 243, 0.7);
+}
+
+.nav .nav-music-btn {
+    font-size: 30px;
+}
+
+.nav .nav-music-btn i:hover {
+    color: #fff;
+    font-size: 30px;
+    animation: rotation 6s infinite linear;
+}
+
+
+.form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 570px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container {
+    visibility: hidden;
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.register-container {
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    padding: 30px;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    /*left: 710px;
+    /*transition: transform .18s ease;
+    transition: none;
+    transform: translateX(0);
+    overflow: hidden;*/
+}
+
+/*.wrapper.active .form-box.register-container {
+    transition: transform .18s ease;
+    transition: none;
+    transform: translateX(0);
+}*/
+
+.top span {
+    color: black;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /*padding: 0rem 0rem 0rem 7.5rem;*/
+}
+
+.top span a {
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+}
+
+.heading {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.two-forms {
+    display: flex;
+    gap: 20px;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgb(0 0 0 / 20%);
+    color: black;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+    overflow: hidden;
+}
+
+.input-field:hover, .input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: black;
+}
+
+/*.input-box p {
+    font-size: 15px;
+    color: #EF0107;
+    visibility: hidden;
+}*/
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+}
+
+.two label a {
+    text-decoration: none;
+    color: black;
+}
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+  
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.15);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+  
+ #myBtn {
+    width: 130px;
+    font-size: small;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    cursor: pointer;
+}
+  
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+@media only screen and (max-width: 786px) {
+    .nav-button {
+        display: none;
+    }
+    .nav-music-btn i{
+        font-size: 25px;
+        color: #ddd;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-music-btn i:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+
+    .nav-button .btn.white-btn{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .form-box{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}

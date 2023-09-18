@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style_10.css">
+    <title>Login and Signup</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+<!---Character Intro
+            <div class="nav-intro">
+                <ul>
+                    <li><a href="#" class="link">Shen Xinghui</a></li>l
+                    <li><a href="#" class="link">Li Shen</a></li>
+                    <li><a href="#" class="link">Qi Yu</a></li>
+            </div>
+        -->  
+            <div class="nav-music-btn">
+                <i class='bx bx-music' id="icon"></i>
+            </div>
+        </nav>
+
+<!-- Form box-->
+    <div class="form-box">
+
+        <!--login form-->
+        <div class="login-container" id="login" action="/">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <div class="heading">Login</div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="username" placeholder="Username or Email">
+                <p></p>
+                <i class="bx bxs-user-circle"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="password" placeholder="Password">
+                <p></p>
+                <i class="bx bxs-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" id="submit"  value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div> 
+            </div>        
+        </div>
+    
+
+        <!--signup form-->
+        <div class="register-container" id="register" action="/">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <div class="heading">Signup</div>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <div class="error"></div>
+                    <i class="bx bxs-user-circle"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <div class="error"></div>
+                    <i class="bx bxs-user-circle"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="email" placeholder="Email">
+                <p></p>
+                <div class="error"></div>
+                <i class="bx bxs-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="password2" placeholder="Create Password">
+                <p></p>
+                <div class="error"></div>
+                <i class="bx bxs-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="password3" placeholder="Confirm Password">
+                <p></p>
+                <div class="error"></div>
+                <i class="bx bxs-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" id="submit2" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>                 
+                </div>
+                <div class="two">
+                    <label><a href= "#">Terms & conditions</a></label>
+                </div>
+            </div>         
+        </div>
+    </div>
+</div>
+
+<!-- Audio -->
+    <audio id="mySong">
+        <source src="soundtrack.mp3" type="audio/mpeg">
+    </audio>
+
+<!--- Video -->
+     <video autoplay muted loop id="myVideo">
+        <source src="1217.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+
+<script src="script_6.js"></script>
+</body>
+</html>
