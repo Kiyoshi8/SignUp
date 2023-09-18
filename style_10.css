@@ -17,15 +17,6 @@ body {
     animation: slide 25s infinite;
 }
 
-/*@keyframes slide {
-    25%{
-        background: url('Images/lishen18.jpg');
-    }
-    50%{
-        background: url('Images/qiyu17.jpg');
-    }
-}*/
-
 .wrapper {
     display: flex;
     justify-content: center;
@@ -45,51 +36,6 @@ body {
     /*background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);*/
     z-index: 100;
 }
-
-/*.nav-intro li {
-    display: flex;
-}
-
-.nav-intro li a {
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 0rem 2rem;
-    list-style-type: none;
-    color: #fff;
-}
-
-.nav-intro ul li .link {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-    padding-bottom: 15px;
-    margin: 0 5rem;
-}
-
-.link:hover {
-    border-bottom: 2px solid #fff;
-}
-
-.sub-intro-1 {
-    display: none;
-}
-
-.nav-intro:hover .sub-intro-1 {
-    margin-left: -32px;
-    right: 100;
-    position: absolute;
-    padding: 2rem 2rem 9%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 20;
-    display: block;
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.nav-intro ul li:hover .sub-intro-1 ul {
-    display: block;
-    margin: 10px;
-}*/
 
 .nav-button .btn {
     width: 130px;
@@ -189,12 +135,6 @@ body {
     overflow: hidden;*/
 }
 
-/*.wrapper.active .form-box.register-container {
-    transition: transform .18s ease;
-    transition: none;
-    transform: translateX(0);
-}*/
-
 .top span {
     color: black;
     font-size: small;
@@ -250,12 +190,6 @@ body {
     left: 17px;
     color: black;
 }
-
-/*.input-box p {
-    font-size: 15px;
-    color: #EF0107;
-    visibility: hidden;
-}*/
 
 .submit {
     font-size: 15px;
